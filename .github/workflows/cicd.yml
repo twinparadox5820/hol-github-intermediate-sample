@@ -27,4 +27,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: dotnet-webapp
-        path: src/* #ビルド成果物のパスを記入してください
+        path: / #ビルド成果物のパスを記入してください
