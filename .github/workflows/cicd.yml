@@ -27,4 +27,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: dotnet-webapp
-        path: / #ビルド成果物のパスを記入してください
+        path: ${{env.DOTNET_ROOT}}/hol-github-intermediate-sample #ビルド成果物のパスを記入してください
