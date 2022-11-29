@@ -24,7 +24,7 @@ jobs:
     - name: Publish
       run: dotnet publish ./src/SampleApplication.csproj -c Release -o ${{env.DOTNET_ROOT}}/webapp
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: dotnet-webapp
-        path: ${{env.DOTNET_ROOT}}/hol-github-intermediate-sample #ビルド成果物のパスを記入してください
+  uses: actions/upload-artifact@v3
+  with:
+    name: dotnet-webapp
+    path: #ビルド成果物のパスを記入してください
