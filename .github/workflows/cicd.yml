@@ -54,4 +54,4 @@ jobs:
         with:
           app-name: ${{ env.app-app-hol-github-intermediate-samplexbnb }} # env.の後にアプリ名の環境変数名を記入してください
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }} # secrets.の後に定義したSecretの名前を記入してください
-          package: ${{ env.webapp }} # env.の後にアプリのパッケージパスの環境変数名を記入してください
+          package: ${{ env.DOTNET_ROOT }}/webapp # env.の後にアプリのパッケージパスの環境変数名を記入してください
