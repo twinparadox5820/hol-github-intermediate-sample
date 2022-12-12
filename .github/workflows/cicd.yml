@@ -5,7 +5,7 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: '.'
 on:
   push: # xxxをプッシュイベントに変えてください
-    branches: [ "main" ] # mainブランチを対象にしてください
+    branches: [ "" ] # mainブランチを対象にしてください
   pull_request: # xxxをプルリクエストイベントに変えてください
     branches: [ "main" ] # mainブランチを対象にしてください
   workflow_dispatch: # xxxを手動イベントに変えてください
