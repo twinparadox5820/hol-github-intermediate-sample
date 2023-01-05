@@ -32,7 +32,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: dotnet-webapp
-        path: ${{env.DOTNET_ROOT}}/webapp #ビルド成果物のパスを記入してください
+        path: ./bin/Publish #ビルド成果物のパスを記入してください
   deploy:
     permissions:
       contents: none
