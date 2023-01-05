@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore # この行にdotnetのリストアコマンドを記入してください
+      run: dotnet restore ./src/SampleApplication.csproj # この行にdotnetのリストアコマンドを記入してください
     - name: Build
       run: dotnet build --no-restore
     - name: Test
